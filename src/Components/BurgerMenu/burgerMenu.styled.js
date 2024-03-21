@@ -5,7 +5,7 @@ export const ButtonsContainer = styled.div`
   align-items: center;
   flex-direction: row-reverse;
   border-radius: 12px;
-  background: rgba(30, 30, 30, 0.1);
+  background: ${props => props.bgcolor || 'rgba(30, 30, 30, 0.1)'}; // Змінено bgColor на bgcolor
   backdrop-filter: blur(6px);
   width: fit-content;
   height: 80px;
@@ -14,13 +14,10 @@ export const ButtonsContainer = styled.div`
     height: 80px;
     padding: 0px;
     background-color: transparent;
-    color: #1e1e1e;
-    font-family: 'Messina Sans Mono', monospace;
+    color: ${props => props.textcolor || '#1e1e1e'};
+    font-family: "Messina Sans Mono", monospace;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 19px;
-    text-transform: uppercase;
   }
 `;
 

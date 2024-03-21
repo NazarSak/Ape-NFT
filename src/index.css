@@ -1,8 +1,21 @@
 @font-face {
-  font-family: 'Messina Sans Mono';
-  src: url('./assets/fonts/MessinaSans/MessinaSansMono-Black.eot');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Messina Sans Mono";
+  src: url("./assets/fonts/MessinaSans/MessinaSansMono-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "Messina Sans Mono regular";
+  src: url("./assets/fonts/MessinaSans/MessinaSansMono-Regular.woff");
+}
+
+@font-face {
+  font-family: "Biro Script Plus";
+  src: url("./assets/fonts/BiroScriptPlus/BiroScriptPlus-Bold.woff");
+}
+
+@font-face {
+  font-family: "Right Grotesk";
+  src: url("./assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.otf");
 }
 
 :root {
@@ -19,6 +32,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -27,16 +44,26 @@ body {
   padding: 16px 0 40px 0;
 }
 
-ul{
+section {
+  width: 100%;
+}
+
+ul {
   list-style: none;
   padding: 0;
 }
 
-h2,p{
-margin: 0;
+h2,
+p {
+  margin: 0;
+  width: fit-content;
 }
 
-button{
+p {
+  font-family: "Messina Sans Mono", monospace;
+}
+
+button {
   cursor: pointer;
   outline: none;
   display: flex;

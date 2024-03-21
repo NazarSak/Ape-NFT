@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { ButtonsContainer,ListButtons } from "./burgerMenu.styled";
+import { ButtonsContainer, ListButtons } from "./burgerMenu.styled";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ textColor, bgColor }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,10 +10,8 @@ const BurgerMenu = () => {
   };
 
   return (
-    <ButtonsContainer>
-      <button onClick={toggleMenu}>
-        {isOpen ? "CLOSE" : "MENU"}
-      </button>
+    <ButtonsContainer textcolor={textColor} bgcolor={bgColor}>
+      <button onClick={toggleMenu}>{isOpen ? "CLOSE" : "MENU"}</button>
       {isOpen && (
         <ListButtons>
           <li>

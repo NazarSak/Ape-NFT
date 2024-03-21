@@ -13,7 +13,7 @@ const Header = () => {
     <HeaderContainer>
       <ImgLogo src={Logo} alt="Logo" />
       <LinkContainer>
-      <BurgerMenu />
+      <BurgerMenu/>
       <SocialList>
         <li>
           <button>

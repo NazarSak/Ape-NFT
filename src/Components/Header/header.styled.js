@@ -8,12 +8,14 @@ export const HeaderContainer = styled.header`
 export const ImgLogo = styled.img`
   width: 72px;
   height: 50px;
+  margin-top: 15px;
 `;
 
 export const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px;
 `;
 
 export const SocialList = styled.ul`
