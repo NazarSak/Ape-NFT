@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: 'Messina Sans Mono';
+  src: url('./assets/fonts/MessinaSans/MessinaSansMono-Black.eot');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -27,8 +32,8 @@ ul{
   padding: 0;
 }
 
-h2{
-
+h2,p{
+margin: 0;
 }
 
 button{

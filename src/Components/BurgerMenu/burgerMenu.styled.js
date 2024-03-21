@@ -14,13 +14,13 @@ export const ButtonsContainer = styled.div`
     height: 80px;
     padding: 0px;
     background-color: transparent;
-    color: #1E1E1E;
-font-family: "Messina Sans Mono";
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 19px; 
-text-transform: uppercase;
+    color: #1e1e1e;
+    font-family: 'Messina Sans Mono', monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    text-transform: uppercase;
   }
 `;
 
