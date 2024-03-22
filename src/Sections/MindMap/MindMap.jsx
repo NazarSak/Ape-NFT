@@ -29,7 +29,7 @@ const MindMap = () => {
           <h3>Token</h3>
         </li>
         <li>
-            <a href="">
+            <a href="https://nft-inator.com/nft-generator?gad_source=1&gclid=Cj0KCQjw2PSvBhDjARIsAKc2cgM3vfgto1-5ZAKxAWMN5ZjQ5oRb425ZUkzi8BagANKkw1iMIJ6Tp-IaAg4kEALw_wcB">
 
             <img src={Arrow} alt="Arrow" />
           <h3>Learn <br /> more <br /> in mind map</h3>

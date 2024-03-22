@@ -24,25 +24,20 @@ export const List = styled.ul`
   li {
     width: 456px;
     height: 432px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: grid;
     padding: 24px;
     border-radius: 24px;
     background: #1e1e1e;
-
+    justify-items: end;
     &:last-child {
       background: #dc3b5a;
     }
   }
 
   a {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: grid;
     width: 100%;
-    height: 100%;
+    justify-items: end;
   }
 
   h3 {
@@ -52,7 +47,6 @@ export const List = styled.ul`
     line-height: 64px;
     text-transform: uppercase;
     margin-right: auto;
-
     &:last-child {
       margin-top: auto;
     }
