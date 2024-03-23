@@ -8,6 +8,7 @@ export const Section = styled.section`
   background: #dc3b5a;
   padding: 24px 96px 0;
   position: relative;
+  display: block;
 `;
 
 export const MonkeyBackImg = styled.img`
