@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleSlider from "./SimpleSlider/SimpleSlider";
+import SimpleSlider from "../../Components/SimpleSlider/SimpleSlider";
 import { Title } from "./collection.styled";
 
 const Collection = () => {

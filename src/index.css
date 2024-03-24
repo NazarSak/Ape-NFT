@@ -64,6 +64,10 @@ p {
   font-family: "Messina Sans Mono", monospace;
 }
 
+input{
+  outline: none;
+}
+
 button {
   cursor: pointer;
   outline: none;
