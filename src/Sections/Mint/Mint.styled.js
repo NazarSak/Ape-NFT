@@ -7,7 +7,7 @@ export const Title = styled.h2`
   line-height: 160px;
   text-transform: uppercase;
   margin-bottom: 80px;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     font-size: 80px;
     line-height: 80px;
     margin-bottom: 40px;
@@ -27,7 +27,7 @@ export const Container = styled.div`
     line-height: 29px;
     text-transform: uppercase;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     gap: 24px;
     width: 397px;
     p {
@@ -69,7 +69,7 @@ export const Form = styled.form`
     font-family: "Right Grotesk";
     font-size: 28px;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     gap: 16px;
     input {
       width: 150px;
@@ -100,7 +100,7 @@ export const InputContainer = styled.div`
     font-size: 12px;
     text-transform: uppercase;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     span {
       font-size: 10px;
       bottom: -12px;
@@ -117,7 +117,7 @@ export const ContainerIcon = styled.div`
   border-radius: 12px 0px 0px 12px;
   background: #1e1e1e;
   backdrop-filter: blur(6px);
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     width: 48px;
   }
 `;

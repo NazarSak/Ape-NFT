@@ -66,7 +66,7 @@ p {
   font-family: "Messina Sans Mono", monospace;
 }
 
-input{
+input {
   outline: none;
 }
 
@@ -79,8 +79,16 @@ button {
   border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  /* section{
+    max-width: 480px;
+  } */
+
+}
+
+
+@media (max-width: 1279px) {
   section {
-    max-width: 736px;
+    width: 736px;
   }
 }

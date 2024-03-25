@@ -5,7 +5,7 @@ export const Title = styled.h2`
   font-family: "Right Grotesk";
   font-size: 160px;
   line-height: 160px;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     font-size: 80px;
     line-height: 80px;
   }
@@ -18,7 +18,7 @@ export const List = styled.ul`
   width: 1032px;
   gap: 24px;
   margin-top: 80px;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     margin-top: 48px;
     width: 592px;
   }
@@ -77,7 +77,7 @@ export const ListItem = styled.li`
     transition: opacity 0.7s ease, transform 0.7s ease;
     width: 200px;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     width: 568px;
     height: ${({ active }) => (active ? "159px" : "64px")};
     padding: 0 12px;
@@ -110,7 +110,7 @@ export const Question = styled.div`
   gap: 28px;
   height: fit-content;
   margin-top: ${({ active }) => (active ? "24px" : "0")};
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     margin-top: ${({ active }) => (active ? "18px" : "0")};
     gap: 20px;
   }

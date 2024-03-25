@@ -24,7 +24,7 @@ export const ButtonsContainer = styled.div`
     font-family: "Messina Sans Mono", monospace;
     cursor: pointer;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     height: auto;
     z-index: 2;
     button {
@@ -47,7 +47,7 @@ export const ListButtons = styled.ul`
     justify-content: center;
     align-items: center;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     margin: 0;
     li {
       width: 48px;

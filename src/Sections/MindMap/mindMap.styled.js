@@ -6,7 +6,7 @@ export const Title = styled.h2`
   font-size: 160px;
   line-height: 160px;
   text-transform: uppercase;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     font-size: 80px;
     line-height: 80px;
   }
@@ -57,7 +57,7 @@ export const List = styled.ul`
     text-transform: uppercase;
   }
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     width: 592px;
     grid-template-columns: 284px 284px;
     li {

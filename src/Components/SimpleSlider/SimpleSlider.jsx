@@ -45,7 +45,7 @@ const SimpleSlider = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [settings]);
+  }, []);
 
   const handlePrev = () => {
     if (sliderRef.current.innerSlider.state.currentSlide === 0) {

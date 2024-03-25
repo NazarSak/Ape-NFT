@@ -8,10 +8,17 @@ export const Section = styled.section`
   padding: 24px 96px 0;
   position: relative;
   display: block;
-  @media (min-width: 768px) and (max-width: 1279px) {
+
+  @media (max-width: 1279px) {
     width: 712px;
     height: 397px;
     padding: 12px 12px 0;
+  }
+
+  @media (max-width: 767px) {
+
+    max-width: 480px;
+    padding: 8px 8px 0;
   }
 `;
 
@@ -22,10 +29,14 @@ export const MonkeyBackImg = styled.img`
   bottom: 0;
   left: 30%;
   z-index: 1;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     width: 283px;
     height: 386px;
     left: 29%;
+  }
+  @media (max-width: 767px) {
+    width: 216px;
+    height: 284px;
   }
 `;
 
@@ -57,7 +68,7 @@ export const TitleContainer = styled.div`
     font-weight: 400;
     line-height: 40px;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     top: 26%;
     left: 10.5%;
 
@@ -69,11 +80,24 @@ export const TitleContainer = styled.div`
       line-height: 92px;
       letter-spacing: 0.92px;
     }
-  p {
-    font-size: 20px;
-    line-height: 33px;
-
+    p {
+      font-size: 20px;
+      line-height: 33px;
+    }
   }
+  @media (max-width: 767px) {
+    div {
+      width: auto;
+    }
+    h2 {
+      font-size: 44px;
+      line-height: 44px;
+      letter-spacing: 0.44px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 27px;
+    }
   }
 `;
 
@@ -84,7 +108,7 @@ export const LowerParagraph = styled.p`
   font-family: "Biro Script Plus", sans-serif;
   line-height: 40px;
   margin-top: 20px;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     margin-left: 72px;
     font-size: 20px;
     line-height: 33px;
@@ -132,12 +156,11 @@ export const MeetApesConatiner = styled.div`
     font-weight: 900;
     line-height: 34px;
   }
-  a{
+  a {
     color: #1e1e1e;
-
   }
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     width: 190px;
     gap: 16px;
     margin-right: 57px;

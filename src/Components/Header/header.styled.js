@@ -9,7 +9,7 @@ export const ImgLogo = styled.img`
   width: 72px;
   height: 50px;
   margin-top: 15px;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     width: 48px;
     height: 32px;
     margin-top: 8px;
@@ -21,7 +21,7 @@ export const LinkContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     margin-right: 0px;
   }
 `;
@@ -40,7 +40,7 @@ export const SocialList = styled.ul`
     background: rgba(30, 30, 30, 0.1);
     backdrop-filter: blur(6px);
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     gap: 8px;
     margin-top: 8px;
     button {

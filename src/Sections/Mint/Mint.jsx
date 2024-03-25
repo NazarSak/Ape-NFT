@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 
 import Dagger from "../../assets/svg/About/dagger.svg";
 import Discord from "../../assets/svg/Mint/discord.svg";

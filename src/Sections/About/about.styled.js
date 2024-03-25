@@ -10,8 +10,12 @@ export const Section = styled.section`
 export const HistoryContainer = styled.div`
   display: flex;
   justify-content: center;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     gap: 10px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -42,7 +46,7 @@ export const TitleContainer = styled.div`
   span {
     color: #dc3b5a;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     width: 269px;
     div {
       width: 269px;
@@ -57,6 +61,57 @@ export const TitleContainer = styled.div`
       font-size: 16px;
       line-height: 19px;
     }
+  }
+
+  @media (max-width: 767px) {
+    
+    div{
+      display: none;
+    }
+    
+    h2 {
+      font-size: 40px;
+      line-height: 40px;
+      width: 216px;
+    }
+    p {
+    }
+  }
+`;
+
+export const BrMobile = styled.br`
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+`;
+
+export const DesktopDiv = styled.div`
+  @media (max-width: 767px) {
+    display: none;
+  }
+`;
+export const MonkeyDiv = styled.span`
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+`;
+export const MobileDiv = styled.div`
+  display: none;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+`;
+export const DesktopP = styled.p`
+  @media (max-width: 767px) {
+    display: none;
   }
 `;
 
@@ -80,7 +135,7 @@ export const MonkeyContainer = styled.div`
     width: 492px;
     height: 662px;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     gap: 0px;
     margin-top: 11px;
     margin-right: 0px;
@@ -95,6 +150,12 @@ export const MonkeyContainer = styled.div`
       height: 422px;
     }
   }
+  @media (max-width: 767px) {
+    img {
+      width: 216px;
+      height: 292px;
+    }
+  }
 `;
 
 export const BurgerMenuWrapper = styled.div`
@@ -102,7 +163,7 @@ export const BurgerMenuWrapper = styled.div`
   position: absolute;
   right: 122px;
   top: -33px;
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     display: none;
   }
 `;
@@ -122,7 +183,7 @@ export const Banner = styled.div`
     color: #fff;
     text-transform: uppercase;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 1279px) {
     padding: 6px 0px 8px 0px;
     gap: 24px;
     h2 {
