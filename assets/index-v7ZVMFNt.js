@@ -152,8 +152,8 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   z-index: 999;
-  opacity: ${({isOpen:e})=>e?"1":"0"};
-  animation: ${({isOpen:e})=>e?og:lg} 0.3s ease-in-out;
+  opacity: ${({isopen:e})=>e?"1":"0"};
+  animation: ${({isopen:e})=>e?og:lg} 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
   
   ul {
@@ -213,7 +213,7 @@ Error generating stack: `+o.message+`
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-`,cg=()=>{const[e,t]=K.useState(!1);K.useEffect(()=>{const i=document.body;return e?i.style.overflowY="hidden":i.style.overflowY="unset",()=>{i.style.overflowY="unset"}},[e]);const n=()=>{t(!e)},r=()=>{t(!1)};return f.jsxs("header",{children:[f.jsx(ig,{onClick:n,children:"MENU"}),e&&f.jsx(f.Fragment,{children:f.jsxs(sg,{isOpen:e,children:[f.jsx(rg,{src:Jm,alt:"LogoWhite"}),f.jsxs(ag,{children:[f.jsx("li",{children:f.jsx("button",{onClick:n,children:"CLOSE"})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://discord.com/",children:f.jsx("img",{src:eg,alt:"Dicord"})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsx("img",{src:tg,alt:"Logomark"})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsx("img",{src:ng,alt:"LogoX"})})})})]}),f.jsxs("ul",{children:[f.jsx("li",{children:f.jsx("a",{href:"#aboutSection",onClick:r,children:"ABOUT"})}),f.jsx("li",{children:f.jsx("a",{href:"#mindMapSection",onClick:r,children:"M-map"})}),f.jsx("li",{children:f.jsx("a",{href:"#faqSection",onClick:r,children:"Faq"})}),f.jsx("li",{children:f.jsx("a",{href:"#collectionSection",onClick:r,children:"ARTS"})}),f.jsx("li",{children:f.jsx("a",{href:"#mintSection",onClick:r,children:"MINT"})})]}),f.jsx(ug,{children:"© Yacht ape 2024 all rights reserved"})]})})]})},fg="/Ape-NFT/assets/Logo-D05QohaE.png",dg=A.header`
+`,cg=()=>{const[e,t]=K.useState(!1);K.useEffect(()=>{const i=document.body;return e?i.style.overflowY="hidden":i.style.overflowY="unset",()=>{i.style.overflowY="unset"}},[e]);const n=()=>{t(!e)},r=()=>{t(!1)};return f.jsxs("header",{children:[f.jsx(ig,{onClick:n,children:"MENU"}),e&&f.jsx(f.Fragment,{children:f.jsxs(sg,{isopen:e,children:[f.jsx(rg,{src:Jm,alt:"LogoWhite"}),f.jsxs(ag,{children:[f.jsx("li",{children:f.jsx("button",{onClick:n,children:"CLOSE"})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://discord.com/",children:f.jsx("img",{src:eg,alt:"Dicord"})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsx("img",{src:tg,alt:"Logomark"})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsx("img",{src:ng,alt:"LogoX"})})})})]}),f.jsxs("ul",{children:[f.jsx("li",{children:f.jsx("a",{href:"#aboutSection",onClick:r,children:"ABOUT"})}),f.jsx("li",{children:f.jsx("a",{href:"#mindMapSection",onClick:r,children:"M-map"})}),f.jsx("li",{children:f.jsx("a",{href:"#faqSection",onClick:r,children:"Faq"})}),f.jsx("li",{children:f.jsx("a",{href:"#collectionSection",onClick:r,children:"ARTS"})}),f.jsx("li",{children:f.jsx("a",{href:"#mintSection",onClick:r,children:"MINT"})})]}),f.jsx(ug,{children:"© Yacht ape 2024 all rights reserved"})]})})]})},fg="/Ape-NFT/assets/Logo-D05QohaE.png",dg=A.header`
   display: flex;
   justify-content: space-between;
 `,pg=A.img`
@@ -259,7 +259,7 @@ Error generating stack: `+o.message+`
       height: 48px;
     }
   }
-`,gg=()=>{const e=window.innerWidth<=1279;return f.jsxs(dg,{children:[f.jsx(pg,{src:fg,alt:"Logo"}),f.jsxs(hg,{children:[e?f.jsx(cg,{}):f.jsx(Wp,{}),f.jsxs(mg,{children:[f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://discord.com/",children:f.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",children:f.jsx("path",{d:"M18.9419 5.88613C17.6472 5.31705 16.2629 4.90345 14.8158 4.66797C14.638 4.96987 14.4303 5.37592 14.2872 5.69895C12.7487 5.48159 11.2244 5.48159 9.71429 5.69895C9.57116 5.37592 9.35876 4.96987 9.17947 4.66797C7.73067 4.90345 6.34479 5.31856 5.05016 5.88915C2.43887 9.59646 1.73099 13.2117 2.08493 16.7756C3.81688 17.9908 5.49534 18.7289 7.14548 19.2119C7.55291 18.6851 7.91628 18.1251 8.22933 17.5349C7.63314 17.322 7.06211 17.0594 6.52255 16.7545C6.6657 16.6549 6.8057 16.5507 6.94099 16.4435C10.2319 17.8896 13.8074 17.8896 17.059 16.4435C17.1958 16.5507 17.3358 16.6549 17.4774 16.7545C16.9362 17.0609 16.3637 17.3235 15.7674 17.5364C16.0805 18.1251 16.4423 18.6866 16.8513 19.2134C18.503 18.7304 20.183 17.9923 21.915 16.7756C22.3303 12.6441 21.2055 9.0621 18.9419 5.88613ZM8.67765 14.5838C7.68977 14.5838 6.87963 13.7174 6.87963 12.6623C6.87963 11.6071 7.67246 10.7392 8.67765 10.7392C9.68285 10.7392 10.4929 11.6056 10.4756 12.6623C10.4773 13.7174 9.68285 14.5838 8.67765 14.5838ZM15.3223 14.5838C14.3344 14.5838 13.5242 13.7174 13.5242 12.6623C13.5242 11.6071 14.3171 10.7392 15.3223 10.7392C16.3274 10.7392 17.1376 11.6056 17.1203 12.6623C17.1203 13.7174 16.3274 14.5838 15.3223 14.5838Z",fill:"#1E1E1E"})})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",children:[f.jsx("g",{"clip-path":"url(#clip0_51_1506)",children:f.jsx("g",{mask:"url(#mask0_51_1506)",children:f.jsx("g",{mask:"url(#mask1_51_1506)",children:f.jsx("path",{d:"M12.1048 0.00041571C5.39441 -0.0547843 -0.0547843 5.39442 0.00041571 12.1048C0.0568157 18.6208 5.38001 23.9452 11.8948 23.9992C18.6052 24.0568 24.0568 18.6052 23.9992 11.8948C23.9452 5.38122 18.6208 0.0568157 12.1048 0.00041571ZM8.51681 5.97282C9.28481 6.94842 9.74441 8.18322 9.74441 9.52242C9.74441 10.6828 9.40001 11.7628 8.80841 12.664H4.64801L8.51561 5.97162L8.51681 5.97282ZM21.2008 13.2832V14.1472C21.2008 14.2036 21.1708 14.2516 21.1192 14.2732C20.8372 14.3932 19.9072 14.8252 19.5196 15.3628C18.5212 16.7524 17.7592 18.9364 16.0552 18.9364H8.94521C6.42761 18.9364 4.32161 16.9384 4.32281 14.2768C4.32281 14.2108 4.37921 14.1568 4.44521 14.1568H7.81481C7.93121 14.1568 8.02241 14.2504 8.02241 14.3644V15.0148C8.02241 15.3604 8.30201 15.6412 8.64881 15.6412H11.2048V14.1532H9.45881C10.4632 12.8812 11.0608 11.2756 11.0608 9.52722C11.0608 7.57722 10.3132 5.79882 9.08921 4.46922C9.82961 4.55562 10.5376 4.70322 11.2048 4.89882V4.48482C11.2048 4.05522 11.5528 3.70722 11.9824 3.70722C12.412 3.70722 12.76 4.05522 12.76 4.48482V5.48322C15.1456 6.59682 16.708 8.44482 16.708 10.5352C16.708 11.7616 16.1716 12.9028 15.2464 13.8628C15.0688 14.0464 14.8228 14.1508 14.5648 14.1508H12.7612V15.6364H15.0256C15.514 15.6364 16.39 14.71 16.8052 14.152C16.8052 14.152 16.8232 14.1244 16.8712 14.11C16.9192 14.0956 21.0292 13.1524 21.0292 13.1524C21.1156 13.1284 21.2008 13.1944 21.2008 13.282V13.2832Z",fill:"#1E1E1E"})})})}),f.jsx("defs",{children:f.jsx("clipPath",{id:"clip0_51_1506",children:f.jsx("rect",{width:"24",height:"24",fill:"white"})})})]})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",children:[f.jsx("g",{clipPath:"url(#clip0_51_1139)",children:f.jsx("path",{d:"M14.2833 10.1571L23.2178 0H21.1006L13.3427 8.81931L7.14656 0H0L9.36984 13.3364L0 23.9877H2.11732L10.3098 14.6742L16.8534 23.9877H24L14.2827 10.1571H14.2833ZM11.3833 13.4538L10.4339 12.1258L2.88022 1.55881H6.1323L12.2282 10.0867L13.1776 11.4147L21.1016 22.4998H17.8495L11.3833 13.4544V13.4538Z",fill:"#1E1E1E"})}),f.jsx("defs",{children:f.jsx("clipPath",{id:"clip0_51_1139",children:f.jsx("rect",{width:"24",height:"24",fill:"white"})})})]})})})})]})]})]})},vg="/Ape-NFT/assets/MonkeyBack-rHjFG6rt.png",yg=A.section`
+`,gg=()=>{const e=window.innerWidth<=1279;return f.jsxs(dg,{children:[f.jsx(pg,{src:fg,alt:"Logo"}),f.jsxs(hg,{children:[e?f.jsx(cg,{}):f.jsx(Wp,{}),f.jsxs(mg,{children:[f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://discord.com/",children:f.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",children:f.jsx("path",{d:"M18.9419 5.88613C17.6472 5.31705 16.2629 4.90345 14.8158 4.66797C14.638 4.96987 14.4303 5.37592 14.2872 5.69895C12.7487 5.48159 11.2244 5.48159 9.71429 5.69895C9.57116 5.37592 9.35876 4.96987 9.17947 4.66797C7.73067 4.90345 6.34479 5.31856 5.05016 5.88915C2.43887 9.59646 1.73099 13.2117 2.08493 16.7756C3.81688 17.9908 5.49534 18.7289 7.14548 19.2119C7.55291 18.6851 7.91628 18.1251 8.22933 17.5349C7.63314 17.322 7.06211 17.0594 6.52255 16.7545C6.6657 16.6549 6.8057 16.5507 6.94099 16.4435C10.2319 17.8896 13.8074 17.8896 17.059 16.4435C17.1958 16.5507 17.3358 16.6549 17.4774 16.7545C16.9362 17.0609 16.3637 17.3235 15.7674 17.5364C16.0805 18.1251 16.4423 18.6866 16.8513 19.2134C18.503 18.7304 20.183 17.9923 21.915 16.7756C22.3303 12.6441 21.2055 9.0621 18.9419 5.88613ZM8.67765 14.5838C7.68977 14.5838 6.87963 13.7174 6.87963 12.6623C6.87963 11.6071 7.67246 10.7392 8.67765 10.7392C9.68285 10.7392 10.4929 11.6056 10.4756 12.6623C10.4773 13.7174 9.68285 14.5838 8.67765 14.5838ZM15.3223 14.5838C14.3344 14.5838 13.5242 13.7174 13.5242 12.6623C13.5242 11.6071 14.3171 10.7392 15.3223 10.7392C16.3274 10.7392 17.1376 11.6056 17.1203 12.6623C17.1203 13.7174 16.3274 14.5838 15.3223 14.5838Z",fill:"#1E1E1E"})})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",children:[f.jsx("g",{clipPath:"url(#clip0_51_1506)",children:f.jsx("g",{mask:"url(#mask0_51_1506)",children:f.jsx("g",{mask:"url(#mask1_51_1506)",children:f.jsx("path",{d:"M12.1048 0.00041571C5.39441 -0.0547843 -0.0547843 5.39442 0.00041571 12.1048C0.0568157 18.6208 5.38001 23.9452 11.8948 23.9992C18.6052 24.0568 24.0568 18.6052 23.9992 11.8948C23.9452 5.38122 18.6208 0.0568157 12.1048 0.00041571ZM8.51681 5.97282C9.28481 6.94842 9.74441 8.18322 9.74441 9.52242C9.74441 10.6828 9.40001 11.7628 8.80841 12.664H4.64801L8.51561 5.97162L8.51681 5.97282ZM21.2008 13.2832V14.1472C21.2008 14.2036 21.1708 14.2516 21.1192 14.2732C20.8372 14.3932 19.9072 14.8252 19.5196 15.3628C18.5212 16.7524 17.7592 18.9364 16.0552 18.9364H8.94521C6.42761 18.9364 4.32161 16.9384 4.32281 14.2768C4.32281 14.2108 4.37921 14.1568 4.44521 14.1568H7.81481C7.93121 14.1568 8.02241 14.2504 8.02241 14.3644V15.0148C8.02241 15.3604 8.30201 15.6412 8.64881 15.6412H11.2048V14.1532H9.45881C10.4632 12.8812 11.0608 11.2756 11.0608 9.52722C11.0608 7.57722 10.3132 5.79882 9.08921 4.46922C9.82961 4.55562 10.5376 4.70322 11.2048 4.89882V4.48482C11.2048 4.05522 11.5528 3.70722 11.9824 3.70722C12.412 3.70722 12.76 4.05522 12.76 4.48482V5.48322C15.1456 6.59682 16.708 8.44482 16.708 10.5352C16.708 11.7616 16.1716 12.9028 15.2464 13.8628C15.0688 14.0464 14.8228 14.1508 14.5648 14.1508H12.7612V15.6364H15.0256C15.514 15.6364 16.39 14.71 16.8052 14.152C16.8052 14.152 16.8232 14.1244 16.8712 14.11C16.9192 14.0956 21.0292 13.1524 21.0292 13.1524C21.1156 13.1284 21.2008 13.1944 21.2008 13.282V13.2832Z",fill:"#1E1E1E"})})})}),f.jsx("defs",{children:f.jsx("clipPath",{id:"clip0_51_1506",children:f.jsx("rect",{width:"24",height:"24",fill:"white"})})})]})})})}),f.jsx("li",{children:f.jsx("button",{children:f.jsx("a",{href:"https://twitter.com/",children:f.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",children:[f.jsx("g",{clipPath:"url(#clip0_51_1139)",children:f.jsx("path",{d:"M14.2833 10.1571L23.2178 0H21.1006L13.3427 8.81931L7.14656 0H0L9.36984 13.3364L0 23.9877H2.11732L10.3098 14.6742L16.8534 23.9877H24L14.2827 10.1571H14.2833ZM11.3833 13.4538L10.4339 12.1258L2.88022 1.55881H6.1323L12.2282 10.0867L13.1776 11.4147L21.1016 22.4998H17.8495L11.3833 13.4544V13.4538Z",fill:"#1E1E1E"})}),f.jsx("defs",{children:f.jsx("clipPath",{id:"clip0_51_1139",children:f.jsx("rect",{width:"24",height:"24",fill:"white"})})})]})})})})]})]})]})},vg="/Ape-NFT/assets/MonkeyBack-rHjFG6rt.png",yg=A.section`
   width: 1216px;
   height: 653px;
   border-radius: 24px;
@@ -1047,50 +1047,7 @@ Error generating stack: `+o.message+`
     margin-bottom: 20px;
     line-height: 40px;
   }
-`,Jy=()=>f.jsxs("section",{id:"collectionSection",children:[f.jsx(qy,{children:"COLLECTION"}),f.jsx(Xy,{})]}),e2="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%3e%3cpath%20d='M18.9419%205.88613C17.6472%205.31705%2016.2629%204.90345%2014.8158%204.66797C14.638%204.96987%2014.4303%205.37592%2014.2872%205.69895C12.7487%205.48159%2011.2244%205.48159%209.71429%205.69895C9.57116%205.37592%209.35876%204.96987%209.17947%204.66797C7.73067%204.90345%206.34479%205.31856%205.05016%205.88915C2.43887%209.59646%201.73099%2013.2117%202.08493%2016.7756C3.81688%2017.9908%205.49534%2018.7289%207.14548%2019.2119C7.55291%2018.6851%207.91628%2018.1251%208.22933%2017.5349C7.63314%2017.322%207.06211%2017.0594%206.52255%2016.7545C6.6657%2016.6549%206.8057%2016.5507%206.94099%2016.4435C10.2319%2017.8896%2013.8074%2017.8896%2017.059%2016.4435C17.1958%2016.5507%2017.3358%2016.6549%2017.4774%2016.7545C16.9362%2017.0609%2016.3637%2017.3235%2015.7674%2017.5364C16.0805%2018.1251%2016.4423%2018.6866%2016.8513%2019.2134C18.503%2018.7304%2020.183%2017.9923%2021.915%2016.7756C22.3303%2012.6441%2021.2055%209.0621%2018.9419%205.88613ZM8.67765%2014.5838C7.68977%2014.5838%206.87963%2013.7174%206.87963%2012.6623C6.87963%2011.6071%207.67246%2010.7392%208.67765%2010.7392C9.68285%2010.7392%2010.4929%2011.6056%2010.4756%2012.6623C10.4773%2013.7174%209.68285%2014.5838%208.67765%2014.5838ZM15.3223%2014.5838C14.3344%2014.5838%2013.5242%2013.7174%2013.5242%2012.6623C13.5242%2011.6071%2014.3171%2010.7392%2015.3223%2010.7392C16.3274%2010.7392%2017.1376%2011.6056%2017.1203%2012.6623C17.1203%2013.7174%2016.3274%2014.5838%2015.3223%2014.5838Z'%20fill='%235A65F2'/%3e%3c/svg%3e",t2="/Ape-NFT/assets/metamask-DGNtQo9v.svg",n2=A.h2`
-  color: #fff;
-  font-family: "Right Grotesk";
-  font-size: 160px;
-  line-height: 160px;
-  text-transform: uppercase;
-  margin-bottom: 80px;
-  @media (max-width: 1279px) {
-    font-size: 80px;
-    line-height: 80px;
-    margin-bottom: 40px;
-  }
-  @media (max-width: 768px) {
-    font-size: 44px;
-    line-height: 40px;
-    margin-bottom: 24px;
-  }
-`,r2=A.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  width: 581px;
-  p {
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-  }
-  @media (max-width: 1279px) {
-    gap: 24px;
-    width: 397px;
-    p {
-      font-size: 16px;
-      line-height: 19px;
-    }
-  }
-  @media (max-width: 768px) {
-    gap: 16px;
-
-    width: 216px;
-  }
-`,i2=A.form`
+`,Jy=()=>f.jsxs("section",{id:"collectionSection",children:[f.jsx(qy,{children:"COLLECTION"}),f.jsx(Xy,{})]}),e2="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%3e%3cpath%20d='M18.9419%205.88613C17.6472%205.31705%2016.2629%204.90345%2014.8158%204.66797C14.638%204.96987%2014.4303%205.37592%2014.2872%205.69895C12.7487%205.48159%2011.2244%205.48159%209.71429%205.69895C9.57116%205.37592%209.35876%204.96987%209.17947%204.66797C7.73067%204.90345%206.34479%205.31856%205.05016%205.88915C2.43887%209.59646%201.73099%2013.2117%202.08493%2016.7756C3.81688%2017.9908%205.49534%2018.7289%207.14548%2019.2119C7.55291%2018.6851%207.91628%2018.1251%208.22933%2017.5349C7.63314%2017.322%207.06211%2017.0594%206.52255%2016.7545C6.6657%2016.6549%206.8057%2016.5507%206.94099%2016.4435C10.2319%2017.8896%2013.8074%2017.8896%2017.059%2016.4435C17.1958%2016.5507%2017.3358%2016.6549%2017.4774%2016.7545C16.9362%2017.0609%2016.3637%2017.3235%2015.7674%2017.5364C16.0805%2018.1251%2016.4423%2018.6866%2016.8513%2019.2134C18.503%2018.7304%2020.183%2017.9923%2021.915%2016.7756C22.3303%2012.6441%2021.2055%209.0621%2018.9419%205.88613ZM8.67765%2014.5838C7.68977%2014.5838%206.87963%2013.7174%206.87963%2012.6623C6.87963%2011.6071%207.67246%2010.7392%208.67765%2010.7392C9.68285%2010.7392%2010.4929%2011.6056%2010.4756%2012.6623C10.4773%2013.7174%209.68285%2014.5838%208.67765%2014.5838ZM15.3223%2014.5838C14.3344%2014.5838%2013.5242%2013.7174%2013.5242%2012.6623C13.5242%2011.6071%2014.3171%2010.7392%2015.3223%2010.7392C16.3274%2010.7392%2017.1376%2011.6056%2017.1203%2012.6623C17.1203%2013.7174%2016.3274%2014.5838%2015.3223%2014.5838Z'%20fill='%235A65F2'/%3e%3c/svg%3e",t2="/Ape-NFT/assets/metamask-DGNtQo9v.svg",n2=A.form`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1182,7 +1139,50 @@ Error generating stack: `+o.message+`
   @media (max-width: 1279px) {
     width: 48px;
   }
-`,o2=()=>{const[e,t]=K.useState(""),[n,r]=K.useState(""),[i,o]=K.useState({}),[l,s]=K.useState(!1),a=()=>{const m={};return e.trim()?/^@[a-zA-Z0-9_]{4,32}$/.test(e.trim())||(m.discordUsername="Wrong discord"):m.discordUsername="Discord username is required",n.trim()?/^0x[a-fA-F0-9]{40}$/.test(n.trim())||(m.walletAddress="Wrong ADDRESS"):m.walletAddress="Wallet address is required",o(m),s(!1),Object.keys(m).length===0},u=m=>{m.preventDefault(),a()&&(t(""),r(""),s(!0))},g=m=>{const{name:x,value:w}=m.target,y={...i};y[x]&&(delete y[x],o(y)),x==="discordUsername"?t(w):x==="walletAddress"&&r(w),s(!1)},h=Object.keys(i).length>0?"ERROR":l?"MINTED":"MINT";return f.jsxs("section",{id:"mintSection",children:[f.jsx(n2,{children:"Are you in?"}),f.jsxs(r2,{children:[f.jsx("img",{src:kr,alt:"Dagger"}),f.jsx("p",{children:"Join the YACHT APE community to be one of the first to receive our limited edition NFT"}),f.jsxs(i2,{onSubmit:u,children:[f.jsxs(Xc,{children:[f.jsx(qc,{children:f.jsx("img",{src:e2,alt:"Discord"})}),f.jsx("input",{type:"text",name:"discordUsername",placeholder:"@username",value:e,onChange:g,style:{borderColor:i.discordUsername?"#DC3B5A":e.trim()?"white":""}}),i.discordUsername&&f.jsx("span",{style:{color:"#DC3B5A"},children:i.discordUsername})]}),f.jsxs(Xc,{children:[f.jsx(qc,{children:f.jsx("img",{src:t2,alt:"Metamask"})}),f.jsx("input",{type:"text",name:"walletAddress",placeholder:"Wallet address",value:n,onChange:g,style:{borderColor:i.walletAddress?"#DC3B5A":n.trim()?"white":""}}),i.walletAddress&&f.jsx("span",{style:{color:"#DC3B5A"},children:i.walletAddress})]}),f.jsx("button",{type:"submit",children:h})]}),l&&f.jsx("p",{style:{color:"green"},children:"Your request has been sent"})]})]})},l2=A.footer`
+`,r2=({handleInputChange:e,handleSubmit:t,buttonText:n,discordUsername:r,walletAddress:i,errors:o})=>f.jsxs(n2,{onSubmit:t,children:[f.jsxs(Xc,{children:[f.jsx(qc,{children:f.jsx("img",{src:e2,alt:"Discord"})}),f.jsx("input",{type:"text",name:"discordUsername",placeholder:"@username",value:r,onChange:e,style:{borderColor:o.discordUsername?"#DC3B5A":r.trim()?"white":""}}),o.discordUsername&&f.jsx("span",{style:{color:"#DC3B5A"},children:o.discordUsername})]}),f.jsxs(Xc,{children:[f.jsx(qc,{children:f.jsx("img",{src:t2,alt:"Metamask"})}),f.jsx("input",{type:"text",name:"walletAddress",placeholder:"Wallet address",value:i,onChange:e,style:{borderColor:o.walletAddress?"#DC3B5A":i.trim()?"white":""}}),o.walletAddress&&f.jsx("span",{style:{color:"#DC3B5A"},children:o.walletAddress})]}),f.jsx("button",{type:"submit",children:n})]}),i2=A.h2`
+  color: #fff;
+  font-family: "Right Grotesk";
+  font-size: 160px;
+  line-height: 160px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  @media (max-width: 1279px) {
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    font-size: 44px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+`,o2=A.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 581px;
+  p {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+  @media (max-width: 1279px) {
+    gap: 24px;
+    width: 397px;
+    p {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  @media (max-width: 768px) {
+    gap: 16px;
+
+    width: 216px;
+  }
+`,l2=()=>{const[e,t]=K.useState(""),[n,r]=K.useState(""),[i,o]=K.useState({}),[l,s]=K.useState(!1),a=()=>{const m={};return e.trim()?/^@[a-zA-Z0-9_]{4,32}$/.test(e.trim())||(m.discordUsername="Wrong discord"):m.discordUsername="Discord username is required",n.trim()?/^0x[a-fA-F0-9]{40}$/.test(n.trim())||(m.walletAddress="Wrong ADDRESS"):m.walletAddress="Wallet address is required",o(m),s(!1),Object.keys(m).length===0},u=m=>{m.preventDefault(),a()&&(t(""),r(""),s(!0))},g=m=>{const{name:x,value:w}=m.target,y={...i};y[x]&&(delete y[x],o(y)),x==="discordUsername"?t(w):x==="walletAddress"&&r(w),s(!1)},h=Object.keys(i).length>0?"ERROR":l?"MINTED":"MINT";return f.jsxs("section",{id:"mintSection",children:[f.jsx(i2,{children:"Are you in?"}),f.jsxs(o2,{children:[f.jsx("img",{src:kr,alt:"Dagger"}),f.jsx("p",{children:"Join the YACHT APE community to be one of the first to receive our limited edition NFT"}),f.jsx(r2,{handleInputChange:g,handleSubmit:u,buttonText:h,discordUsername:e,walletAddress:n,errors:i}),l&&f.jsx("p",{style:{color:"green"},children:"Your request has been sent"})]})]})},s2=A.footer`
   p {
     color: #fff;
     text-align: center;
@@ -1204,7 +1204,7 @@ Error generating stack: `+o.message+`
       line-height: 14px;
     }
   }
-`,s2=()=>f.jsx(l2,{children:f.jsx("p",{children:"© Yacht ape 2024 all rights reserved"})}),a2=A.div`
+`,a2=()=>f.jsx(s2,{children:f.jsx("p",{children:"© Yacht ape 2024 all rights reserved"})}),u2=A.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1215,4 +1215,4 @@ Error generating stack: `+o.message+`
   @media (max-width: 767px) {
     gap: 60px;
   }
-`,u2=()=>f.jsxs(a2,{children:[f.jsx(Cg,{}),f.jsx(Dg,{}),f.jsx(Ry,{}),f.jsx(Hy,{}),f.jsx(Jy,{}),f.jsx(o2,{}),f.jsx(s2,{})]});Yl.createRoot(document.getElementById("root")).render(f.jsx(Fn.StrictMode,{children:f.jsx(u2,{})}));
+`,c2=()=>f.jsxs(u2,{children:[f.jsx(Cg,{}),f.jsx(Dg,{}),f.jsx(Ry,{}),f.jsx(Hy,{}),f.jsx(Jy,{}),f.jsx(l2,{}),f.jsx(a2,{})]});Yl.createRoot(document.getElementById("root")).render(f.jsx(Fn.StrictMode,{children:f.jsx(c2,{})}));
