@@ -9,6 +9,7 @@ export const ImgLogo = styled.img`
   width: 72px;
   height: 50px;
   margin-top: 15px;
+  cursor: pointer;
   @media (max-width: 1279px) {
     width: 48px;
     height: 32px;
@@ -39,6 +40,9 @@ export const SocialList = styled.ul`
     border-radius: 12px;
     background: rgba(30, 30, 30, 0.1);
     backdrop-filter: blur(6px);
+    &:hover path {
+      fill: #f0f0f0;
+    }
   }
   @media (max-width: 1279px) {
     gap: 8px;

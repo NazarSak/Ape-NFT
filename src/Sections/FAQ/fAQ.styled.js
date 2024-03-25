@@ -28,8 +28,7 @@ export const List = styled.ul`
   }
   @media (max-width: 767px) {
     width: 216px;
-  margin-top: 24px;
-
+    margin-top: 24px;
   }
 `;
 
@@ -140,6 +139,7 @@ export const ListItem = styled.li`
 export const Question = styled.div`
   display: flex;
   gap: 28px;
+  cursor: pointer;
   height: fit-content;
   margin-top: ${({ active }) => (active ? "24px" : "0")};
   @media (max-width: 1279px) {
@@ -149,5 +149,13 @@ export const Question = styled.div`
   @media (max-width: 767px) {
     margin-top: ${({ active }) => (active ? "8px" : "0")};
     gap: 6px;
+  }
+  &:hover {
+    span {
+      color: #fff;
+    }
+    h3 {
+      color: #dc3b5a;
+    }
   }
 `;

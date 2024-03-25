@@ -38,8 +38,9 @@ const About = () => {
           </DesktopDiv>
 
           <MonkeyP>
-              WHO GOT <BrMobile /> FED UP WITH BORING <BrMobile /> AND HYPOCRITIC <BrMobile /> COMMONPLACE THIS IS <BrMobile /> HOW
-              THE IDEA OF <BrMobile /> ESCAPING AND DYNAMIC <BrMobile /> JOURNEY ON THE YACHT
+            WHO GOT <BrMobile /> FED UP WITH BORING <BrMobile /> AND HYPOCRITIC{" "}
+            <BrMobile /> COMMONPLACE THIS IS <BrMobile /> HOW THE IDEA OF{" "}
+            <BrMobile /> ESCAPING AND DYNAMIC <BrMobile /> JOURNEY ON THE YACHT
           </MonkeyP>
         </TitleContainer>
         <MonkeyContainer>
@@ -57,7 +58,11 @@ const About = () => {
           </DesktopP>
 
           <BurgerMenuWrapper>
-            <BurgerMenu textColor="#FFF" bgColor="rgba(255, 255, 255, 0.10)" />
+            <BurgerMenu
+              textColor="#FFF"
+              bgColor="rgba(255, 255, 255, 0.10)"
+              textHover="#DC3B5A"
+            />
           </BurgerMenuWrapper>
           <ImgMonkey src={Monkey} alt="Monkey" />
         </MonkeyContainer>

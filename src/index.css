@@ -58,6 +58,15 @@ p {
   width: fit-content;
 }
 
+h2,
+h3,
+a,
+path,
+button,
+p {
+  transition: all 0.7s ease;
+}
+
 a {
   text-decoration: none;
 }
@@ -79,13 +88,11 @@ button {
   border: none;
 }
 
-
 @media (max-width: 1279px) {
   section {
     width: 736px;
   }
 }
-
 
 @media (max-width: 767px) {
   section {

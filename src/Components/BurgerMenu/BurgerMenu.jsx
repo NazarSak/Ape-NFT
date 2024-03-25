@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { ButtonsContainer, ListButtons } from "./burgerMenu.styled";
 
-const BurgerMenu = ({ textColor, bgColor }) => {
+const BurgerMenu = ({ textColor, bgColor,textHover }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+ 
 
   return (
-    <ButtonsContainer textcolor={textColor} bgcolor={bgColor}>
+    <ButtonsContainer textcolor={textColor} bgcolor={bgColor} texthover={textHover}>
       <button onClick={toggleMenu}>MENU</button>
       {isOpen && (
         <ListButtons>

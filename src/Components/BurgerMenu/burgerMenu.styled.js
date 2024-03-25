@@ -9,6 +9,7 @@ export const ButtonsContainer = styled.div`
   backdrop-filter: blur(6px);
   width: fit-content;
   height: 80px;
+  z-index: 2;
   button {
     width: 80px;
     height: 80px;
@@ -18,11 +19,27 @@ export const ButtonsContainer = styled.div`
     font-family: "Messina Sans Mono", monospace;
     font-size: 16px;
     line-height: 19px;
+    &:hover {
+      color: ${(props) => props.texthover || "#fff"};
+      text-decoration: underline;
+    }
   }
   a {
     color: ${(props) => props.textcolor || "#1e1e1e"};
     font-family: "Messina Sans Mono", monospace;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease;
+
     cursor: pointer;
+    &:hover {
+      color: ${(props) => props.texthover || "#fff"};
+
+      text-decoration: underline;
+    }
   }
   @media (max-width: 1279px) {
     height: auto;

@@ -78,6 +78,9 @@ export const Form = styled.form`
     color: #fff;
     font-family: "Right Grotesk";
     font-size: 28px;
+    &:hover {
+      color: #1e1e1e;
+    }
   }
   @media (max-width: 1279px) {
     gap: 16px;
@@ -102,7 +105,7 @@ export const Form = styled.form`
       width: 118px;
     }
     button {
-    width: 216px;
+      width: 216px;
     }
   }
 `;
