@@ -46,7 +46,7 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                 >
-                  <g clip-path="url(#clip0_51_1506)">
+                  <g clipPath="url(#clip0_51_1506)">
                     <g mask="url(#mask0_51_1506)">
                       <g mask="url(#mask1_51_1506)">
                         <path

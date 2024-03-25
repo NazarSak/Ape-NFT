@@ -53,8 +53,8 @@ export const MobileMenu = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 999;
-  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  animation: ${({ isOpen }) => (isOpen ? fadeIn : fadeOut)} 0.3s ease-in-out;
+  opacity: ${({ isopen }) => (isopen ? "1" : "0")};
+  animation: ${({ isopen }) => (isopen ? fadeIn : fadeOut)} 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
   
   ul {

@@ -41,7 +41,7 @@ const BurgerMenuMobile = () => {
       <MenuButton onClick={toggleMenu}>MENU</MenuButton>
       {isOpen && (
         <>
-          <MobileMenu isOpen={isOpen}>
+          <MobileMenu isopen={isOpen}>
             <ImgLogoWhite src={LogoWhite} alt="LogoWhite" />
 
             <SocialList>
