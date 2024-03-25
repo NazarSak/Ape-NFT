@@ -8,7 +8,7 @@ import FourthMonkey from "../../assets/img/FAQ/FourthMonkey.png";
 import { Title, List, ListItem, Question } from "./fAQ.styled";
 
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(1); 
+  const [activeIndex, setActiveIndex] = useState(1);
 
   const toggleContent = (index) => {
     setActiveIndex(index);
@@ -28,7 +28,7 @@ const FAQ = () => {
   }, []);
 
   return (
-    <section>
+    <section id="faqSection">
       <Title>FAQ</Title>
       <List>
         <ListItem active={isActiveItem(0)}>

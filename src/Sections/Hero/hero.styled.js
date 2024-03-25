@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Section = styled.section`
   width: 1216px;
   height: 653px;
@@ -9,6 +8,11 @@ export const Section = styled.section`
   padding: 24px 96px 0;
   position: relative;
   display: block;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 712px;
+    height: 397px;
+    padding: 12px 12px 0;
+  }
 `;
 
 export const MonkeyBackImg = styled.img`
@@ -18,6 +22,11 @@ export const MonkeyBackImg = styled.img`
   bottom: 0;
   left: 30%;
   z-index: 1;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 283px;
+    height: 386px;
+    left: 29%;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -28,6 +37,7 @@ export const TitleContainer = styled.div`
   div {
     display: flex;
     width: 1020px;
+
     justify-content: space-between;
   }
 
@@ -47,6 +57,24 @@ export const TitleContainer = styled.div`
     font-weight: 400;
     line-height: 40px;
   }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    top: 26%;
+    left: 10.5%;
+
+    div {
+      width: 591px;
+    }
+    h2 {
+      font-size: 92px;
+      line-height: 92px;
+      letter-spacing: 0.92px;
+    }
+  p {
+    font-size: 20px;
+    line-height: 33px;
+
+  }
+  }
 `;
 
 export const LowerParagraph = styled.p`
@@ -56,6 +84,12 @@ export const LowerParagraph = styled.p`
   font-family: "Biro Script Plus", sans-serif;
   line-height: 40px;
   margin-top: 20px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 72px;
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 0px;
+  }
 `;
 
 export const MeetApesConatiner = styled.div`
@@ -97,5 +131,31 @@ export const MeetApesConatiner = styled.div`
     font-size: 28px;
     font-weight: 900;
     line-height: 34px;
+  }
+  a{
+    color: #1e1e1e;
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 190px;
+    gap: 16px;
+    margin-right: 57px;
+    margin-top: -15px;
+    p {
+      font-size: 12px;
+      line-height: initial;
+    }
+    span:last-child {
+      margin-right: 0px;
+    }
+    button {
+      width: auto;
+      height: auto;
+      padding: 10px 61px 12px 61px;
+      font-size: 16px;
+      line-height: 19px;
+      z-index: 2;
+    }
   }
 `;

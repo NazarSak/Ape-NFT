@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
 import { ButtonsContainer, ListButtons } from "./burgerMenu.styled";
 
 const BurgerMenu = ({ textColor, bgColor }) => {
@@ -9,25 +8,26 @@ const BurgerMenu = ({ textColor, bgColor }) => {
     setIsOpen(!isOpen);
   };
 
+
   return (
     <ButtonsContainer textcolor={textColor} bgcolor={bgColor}>
       <button onClick={toggleMenu}>{isOpen ? "CLOSE" : "MENU"}</button>
       {isOpen && (
         <ListButtons>
           <li>
-            <button>ABOUT</button>
+            <a href="#aboutSection">ABOUT</a>
           </li>
           <li>
-            <button>M-map</button>
+            <a href="#mindMapSection" >M-map</a>
           </li>
           <li>
-            <button>Faq</button>
+            <a href="#faqSection">Faq</a>
           </li>
           <li>
-            <button>ARTS</button>
+            <a href="#collectionSection">ARTS</a>
           </li>
           <li>
-            <button>MINT</button>
+            <a href="#mintSection">MINT</a>
           </li>
         </ListButtons>
       )}

@@ -10,6 +10,9 @@ export const Section = styled.section`
 export const HistoryContainer = styled.div`
   display: flex;
   justify-content: center;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    gap: 10px;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -39,6 +42,22 @@ export const TitleContainer = styled.div`
   span {
     color: #dc3b5a;
   }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 269px;
+    div {
+      width: 269px;
+      gap: 24px;
+      margin-top: 68px;
+    }
+    h2 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
 `;
 
 export const MonkeyContainer = styled.div`
@@ -61,6 +80,21 @@ export const MonkeyContainer = styled.div`
     width: 492px;
     height: 662px;
   }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    gap: 0px;
+    margin-top: 11px;
+    margin-right: 0px;
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      height: auto;
+      width: 275px;
+    }
+    img {
+      width: 313px;
+      height: 422px;
+    }
+  }
 `;
 
 export const BurgerMenuWrapper = styled.div`
@@ -68,6 +102,9 @@ export const BurgerMenuWrapper = styled.div`
   position: absolute;
   right: 122px;
   top: -33px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: none;
+  }
 `;
 
 export const Banner = styled.div`
@@ -84,5 +121,13 @@ export const Banner = styled.div`
     line-height: 64px;
     color: #fff;
     text-transform: uppercase;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding: 6px 0px 8px 0px;
+    gap: 24px;
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 `;

@@ -4,7 +4,7 @@ import { Title } from "./collection.styled";
 
 const Collection = () => {
   return (
-    <section>
+    <section id="collectionSection">
       <Title>COLLECTION</Title>
       <SimpleSlider />
     </section>

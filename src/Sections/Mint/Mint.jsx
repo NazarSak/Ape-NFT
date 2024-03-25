@@ -10,16 +10,13 @@ import {
   Form,
   InputContainer,
   ContainerIcon,
-} from "./Mint.styled";
-
-import "./mint.css";
+} from "./mint.styled";
 
 const Mint = () => {
     const [discordUsername, setDiscordUsername] = useState("");
     const [walletAddress, setWalletAddress] = useState("");
     const [errors, setErrors] = useState({});
     const [formSubmitted, setFormSubmitted] = useState(false);
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const validateForm = () => {
       const newErrors = {};
@@ -27,13 +24,13 @@ const Mint = () => {
       if (!discordUsername.trim()) {
         newErrors.discordUsername = "Discord username is required";
       } else if (!/^@[a-zA-Z0-9_]{4,32}$/.test(discordUsername.trim())) {
-        newErrors.discordUsername = "Invalid Discord username";
+        newErrors.discordUsername = "Wrong discord";
       }
   
       if (!walletAddress.trim()) {
         newErrors.walletAddress = "Wallet address is required";
       } else if (!/^0x[a-fA-F0-9]{40}$/.test(walletAddress.trim())) {
-        newErrors.walletAddress = "Invalid Metamask address";
+        newErrors.walletAddress = "Wrong ADDRESS";
       }
   
       setErrors(newErrors);
@@ -76,7 +73,7 @@ const Mint = () => {
         : "MINT";
   
     return (
-      <section>
+      <section id="mintSection">
         <Title>Are you in?</Title>
         <Container>
           <img src={Dagger} alt="Dagger" />
@@ -104,7 +101,7 @@ const Mint = () => {
                 }}
               />
               {errors.discordUsername && (
-                <span style={{ color: "red" }}>{errors.discordUsername}</span>
+                <span style={{ color: "#DC3B5A" }}>{errors.discordUsername}</span>
               )}
             </InputContainer>
             <InputContainer>
@@ -126,7 +123,7 @@ const Mint = () => {
                 }}
               />
               {errors.walletAddress && (
-                <span style={{ color: "red" }}>{errors.walletAddress}</span>
+                <span style={{ color: "#DC3B5A" }}>{errors.walletAddress}</span>
               )}
             </InputContainer>
             <button type="submit">{buttonText}</button>

@@ -18,18 +18,20 @@ const Hero = () => {
         <p>diD yOu seE iT ?</p>
         <div>
           <div>
-        <h2>YACHT</h2>
-        <h2>APES</h2>
+            <h2>YACHT</h2>
+            <h2>APES</h2>
           </div>
         </div>
       </TitleContainer>
-        <LowerParagraph>Apes aRe eveRywhere</LowerParagraph>
+      <LowerParagraph>Apes aRe eveRywhere</LowerParagraph>
       <MeetApesConatiner>
         <p>
-          <span>Yacht Ape is a collection</span> of unique digital apes that you <span>can own in
-          NFT format</span>
+          <span>Yacht Ape is a collection</span> of unique digital apes that you{" "}
+          <span>can own in NFT format</span>
         </p>
-        <button>MEET APES</button>
+        <button>
+          <a href="#mintSection">MEET APES</a>
+        </button>
       </MeetApesConatiner>
     </Section>
   );

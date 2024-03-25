@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <Section>
+    <Section id="aboutSection" >
       <HistoryContainer>
         <TitleContainer>
           <h2>
@@ -38,7 +38,7 @@ const About = () => {
           <img src={Monkey} alt="Monkey" />
         </MonkeyContainer>
       </HistoryContainer>
-
+ 
       <Banner>
         <h2>Destroy stereotypes</h2>
         <img src={Dagger} alt="Dagger" />

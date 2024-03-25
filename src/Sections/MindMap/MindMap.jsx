@@ -4,7 +4,7 @@ import { Title, List } from "./mindMap.styled";
 
 const MindMap = () => {
   return (
-    <section>
+    <section id="mindMapSection" >
       <Title>MIND map</Title>
       <List>
         <li>

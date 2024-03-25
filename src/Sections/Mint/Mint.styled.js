@@ -7,6 +7,34 @@ export const Title = styled.h2`
   line-height: 160px;
   text-transform: uppercase;
   margin-bottom: 80px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 581px;
+  p {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    gap: 24px;
+    width: 397px;
+    p {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
 `;
 
 export const Form = styled.form`
@@ -23,7 +51,6 @@ export const Form = styled.form`
     background-color: transparent;
     border-radius: 0px 12px 12px 0px;
     border: 1px solid #1e1e1e;
-
     color: #fff;
     font-size: 16px;
     line-height: 19px;
@@ -42,22 +69,24 @@ export const Form = styled.form`
     font-family: "Right Grotesk";
     font-size: 28px;
   }
-`;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  width: 581px;
-  p {
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    gap: 16px;
+    input {
+      width: 150px;
+      height: 2px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    button {
+      padding: 10px 107px 12px 107px;
+      font-size: 16px;
+      line-height: 19px;
+      border-radius: 8px;
+      width: 248px;
+    }
   }
 `;
+
 export const InputContainer = styled.div`
   display: flex;
   position: relative;
@@ -71,6 +100,12 @@ export const InputContainer = styled.div`
     font-size: 12px;
     text-transform: uppercase;
   }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    span {
+      font-size: 10px;
+      bottom: -12px;
+    }
+  }
 `;
 
 export const ContainerIcon = styled.div`
@@ -82,4 +117,7 @@ export const ContainerIcon = styled.div`
   border-radius: 12px 0px 0px 12px;
   background: #1e1e1e;
   backdrop-filter: blur(6px);
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 48px;
+  }
 `;

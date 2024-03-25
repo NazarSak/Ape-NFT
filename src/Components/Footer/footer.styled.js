@@ -9,4 +9,10 @@ export const FooterContainer = styled.footer`
     line-height: 19px;
     text-transform: uppercase;
   }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
 `;

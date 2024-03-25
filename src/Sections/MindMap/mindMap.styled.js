@@ -6,6 +6,10 @@ export const Title = styled.h2`
   font-size: 160px;
   line-height: 160px;
   text-transform: uppercase;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 80px;
+    line-height: 80px;
+  }
 `;
 
 export const List = styled.ul`
@@ -51,5 +55,30 @@ export const List = styled.ul`
     color: #fff;
     font-size: 24px;
     text-transform: uppercase;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 592px;
+    grid-template-columns: 284px 284px;
+    li {
+      width: 236px;
+      height: 194px;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    p {
+      width: 128px;
+      color: #fff;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    img{
+      width: 24px;
+      height: 24px;
+    }
   }
 `;

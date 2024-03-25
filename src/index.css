@@ -20,6 +20,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +43,7 @@ section {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
+  max-width: 1440px;
 }
 
 ul {
@@ -76,4 +77,10 @@ button {
   justify-content: center;
   align-items: center;
   border: none;
+}
+
+@media (max-width: 768px) {
+  section {
+    max-width: 736px;
+  }
 }
