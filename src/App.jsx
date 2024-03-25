@@ -17,14 +17,15 @@ const Wrapper = styled.div`
 `;
 
 const App = () => {
+
   return (
     <Wrapper>
       <Hero />
-      <About />
-      <MindMap />
-      <FAQ />
-      <Collection />
-      <Mint />
+      <About  />
+      <MindMap  />
+      <FAQ  />
+      <Collection  />
+      <Mint  />
       <Footer />
     </Wrapper>
   );

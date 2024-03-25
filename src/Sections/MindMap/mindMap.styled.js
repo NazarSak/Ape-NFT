@@ -10,6 +10,12 @@ export const Title = styled.h2`
     font-size: 80px;
     line-height: 80px;
   }
+
+  @media (max-width: 767px) {
+    font-size: 44px;
+
+    line-height: 40px;
+  }
 `;
 
 export const List = styled.ul`
@@ -76,7 +82,7 @@ export const List = styled.ul`
       font-size: 12px;
       text-transform: uppercase;
     }
-    img{
+    img {
       width: 24px;
       height: 24px;
     }

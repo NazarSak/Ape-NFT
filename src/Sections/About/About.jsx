@@ -7,11 +7,12 @@ import {
   HistoryContainer,
   TitleContainer,
   DesktopDiv,
-  MonkeyDiv,
+  MonkeyP,
   MobileDiv,
   DesktopP,
   BrMobile,
   MonkeyContainer,
+  ImgMonkey,
   BurgerMenuWrapper,
   Banner,
 } from "./about.styled";
@@ -28,7 +29,7 @@ const About = () => {
             </span>
           </h2>
 
-          <DesktopDiv >
+          <DesktopDiv>
             <img src={Dagger} alt="Dagger" />
             <p>
               EACH ARTWORK IN THE COLLECTION TELLS A STORY OF ONE JOURNEY. ARTS
@@ -36,18 +37,12 @@ const About = () => {
             </p>
           </DesktopDiv>
 
-<span>
-          <p>
-
-            WHO GOT FED UP WITH BORING AND HYPOCRITIC COMMONPLACE THIS IS HOW
-            THE IDEA OF ESCAPING AND DYNAMIC JOURNEY ON THE YACHT
-          </p>
-
-</span>
-
+          <MonkeyP>
+              WHO GOT <BrMobile /> FED UP WITH BORING <BrMobile /> AND HYPOCRITIC <BrMobile /> COMMONPLACE THIS IS <BrMobile /> HOW
+              THE IDEA OF <BrMobile /> ESCAPING AND DYNAMIC <BrMobile /> JOURNEY ON THE YACHT
+          </MonkeyP>
         </TitleContainer>
         <MonkeyContainer>
-
           <MobileDiv>
             <img src={Dagger} alt="Dagger" />
             <p>
@@ -64,7 +59,7 @@ const About = () => {
           <BurgerMenuWrapper>
             <BurgerMenu textColor="#FFF" bgColor="rgba(255, 255, 255, 0.10)" />
           </BurgerMenuWrapper>
-          <img src={Monkey} alt="Monkey" />
+          <ImgMonkey src={Monkey} alt="Monkey" />
         </MonkeyContainer>
       </HistoryContainer>
 

@@ -16,19 +16,13 @@ export const HistoryContainer = styled.div`
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+    gap: 36px;
   }
 `;
 
 export const TitleContainer = styled.div`
   width: 538px;
-  div {
-    display: flex;
-    width: 417px;
-    flex-direction: column;
-    align-items: center;
-    gap: 36px;
-    margin-top: 56px;
-  }
+
   h2 {
     color: #fff;
     font-family: "Right Grotesk";
@@ -46,6 +40,18 @@ export const TitleContainer = styled.div`
   span {
     color: #dc3b5a;
   }
+
+  @media (min-width: 768px) {
+    div {
+      display: flex;
+      width: 417px;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+      margin-top: 56px;
+    }
+  }
+
   @media (max-width: 1279px) {
     width: 269px;
     div {
@@ -64,17 +70,20 @@ export const TitleContainer = styled.div`
   }
 
   @media (max-width: 767px) {
-    
-    div{
-      display: none;
+    width: 216px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    div {
+      gap: 24px;
+      margin-top: 68px;
     }
-    
     h2 {
       font-size: 40px;
       line-height: 40px;
-      width: 216px;
     }
     p {
+      text-align: right;
     }
   }
 `;
@@ -91,22 +100,20 @@ export const DesktopDiv = styled.div`
     display: none;
   }
 `;
-export const MonkeyDiv = styled.span`
+export const MonkeyP = styled.p`
   display: none;
   @media (max-width: 767px) {
     display: block;
+    width: 216px;
   }
 `;
 export const MobileDiv = styled.div`
   display: none;
   @media (max-width: 767px) {
     display: flex;
+    gap: 16px;
     flex-direction: column;
     align-items: center;
-    img {
-      width: 24px;
-      height: 24px;
-    }
   }
 `;
 export const DesktopP = styled.p`
@@ -131,10 +138,9 @@ export const MonkeyContainer = styled.div`
     text-align: right;
     height: 174px;
   }
-  img {
-    width: 492px;
-    height: 662px;
+  @media (min-width: 768px) {
   }
+
   @media (max-width: 1279px) {
     gap: 0px;
     margin-top: 11px;
@@ -145,15 +151,29 @@ export const MonkeyContainer = styled.div`
       height: auto;
       width: 275px;
     }
-    img {
-      width: 313px;
-      height: 422px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 40px;
+
+    p {
+      text-align: center;
     }
   }
+`;
+
+export const ImgMonkey = styled.img`
+  width: 492px;
+  height: 662px;
+  @media (max-width: 1279px) {
+    width: 313px;
+    height: 422px;
+  }
   @media (max-width: 767px) {
-    img {
-      width: 216px;
-      height: 292px;
+    width: 216px;
+    height: 292px;
+    p {
+      text-align: center;
     }
   }
 `;

@@ -10,7 +10,7 @@ import {
   Form,
   InputContainer,
   ContainerIcon,
-} from "./mint.styled";
+} from "./Mint.styled";
 
 const Mint = () => {
     const [discordUsername, setDiscordUsername] = useState("");
