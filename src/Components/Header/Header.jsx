@@ -1,5 +1,5 @@
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
-
+import BurgerMenuMobile from "../BurgerMenuMobile/BurgerMenuMobile ";
 import Logo from "../../assets/img/Header/Logo.png";
 
 import Dicord from "../../assets/svg/Header/discord.svg";
@@ -14,11 +14,14 @@ import {
 } from "./header.styled";
 
 const Header = () => {
+
+  const isMobile = window.innerWidth <= 1279;
+
   return (
     <HeaderContainer>
       <ImgLogo src={Logo} alt="Logo" />
       <LinkContainer>
-        <BurgerMenu />
+      {isMobile ? <BurgerMenuMobile /> : <BurgerMenu />}
         <SocialList>
           <li>
             <button>

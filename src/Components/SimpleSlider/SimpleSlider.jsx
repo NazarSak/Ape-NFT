@@ -33,7 +33,7 @@ const SimpleSlider = () => {
         setSettings({
           ...settings,
           slidesToShow: 1,
-          style: { width: "360px" },
+          style: { width: "295px" },
         });
       }
     };
@@ -73,7 +73,7 @@ const SimpleSlider = () => {
             key={item.id}
             style={{ width: "340px", margin: "0 24px" }}
           >
-            <img src={item.image} alt="" />
+            <img src={item.image} alt={item.id} />
           </ContainerImg>
         ))}
       </Slider>

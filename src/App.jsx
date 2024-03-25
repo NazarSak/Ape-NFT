@@ -14,18 +14,23 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 120px;
+  @media (max-width: 1279px) {
+    gap: 80px;
+  }
+  @media (max-width: 767px) {
+    gap: 60px;
+  }
 `;
 
 const App = () => {
-
   return (
     <Wrapper>
       <Hero />
-      <About  />
-      <MindMap  />
-      <FAQ  />
-      <Collection  />
-      <Mint  />
+      <About />
+      <MindMap />
+      <FAQ />
+      <Collection />
+      <Mint />
       <Footer />
     </Wrapper>
   );

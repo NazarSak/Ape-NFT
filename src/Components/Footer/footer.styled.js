@@ -15,4 +15,11 @@ export const FooterContainer = styled.footer`
       line-height: 14px;
     }
   }
+  @media (max-width: 768px) {
+    p {
+      font-size: 12px;
+      width: 216px;
+      line-height: 14px;
+    }
+  }
 `;

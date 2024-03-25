@@ -9,6 +9,10 @@ export const Title = styled.h2`
     font-size: 80px;
     line-height: 80px;
   }
+  @media (max-width: 767px) {
+    font-size: 44px;
+    line-height: 40px;
+  }
 `;
 
 export const List = styled.ul`
@@ -21,6 +25,11 @@ export const List = styled.ul`
   @media (max-width: 1279px) {
     margin-top: 48px;
     width: 592px;
+  }
+  @media (max-width: 767px) {
+    width: 216px;
+  margin-top: 24px;
+
   }
 `;
 
@@ -103,6 +112,29 @@ export const ListItem = styled.li`
       width: 142px;
     }
   }
+  @media (max-width: 767px) {
+    width: 202px;
+    height: ${({ active }) => (active ? "158px" : "40px")};
+    padding: 0 7px;
+    h3 {
+      font-size: 20px;
+      line-height: 20px;
+      width: 169px;
+    }
+    span {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    p {
+      font-size: 10px;
+      line-height: 11px;
+      width: 169px;
+      bottom: 10px;
+    }
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const Question = styled.div`
@@ -113,5 +145,9 @@ export const Question = styled.div`
   @media (max-width: 1279px) {
     margin-top: ${({ active }) => (active ? "18px" : "0")};
     gap: 20px;
+  }
+  @media (max-width: 767px) {
+    margin-top: ${({ active }) => (active ? "8px" : "0")};
+    gap: 6px;
   }
 `;

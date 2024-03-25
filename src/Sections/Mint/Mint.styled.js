@@ -12,6 +12,11 @@ export const Title = styled.h2`
     line-height: 80px;
     margin-bottom: 40px;
   }
+  @media (max-width: 768px) {
+    font-size: 44px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const Container = styled.div`
@@ -34,6 +39,11 @@ export const Container = styled.div`
       font-size: 16px;
       line-height: 19px;
     }
+  }
+  @media (max-width: 768px) {
+    gap: 16px;
+
+    width: 216px;
   }
 `;
 
@@ -83,6 +93,16 @@ export const Form = styled.form`
       line-height: 19px;
       border-radius: 8px;
       width: 248px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
+    input {
+      width: 118px;
+    }
+    button {
+    width: 216px;
     }
   }
 `;

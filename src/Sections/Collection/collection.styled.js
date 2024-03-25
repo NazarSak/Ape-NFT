@@ -11,4 +11,9 @@ export const Title = styled.h2`
     line-height: 80px;
     margin-bottom: 40px;
   }
+  @media (max-width: 768px) {
+    font-size: 44px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
 `;

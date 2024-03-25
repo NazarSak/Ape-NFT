@@ -16,8 +16,8 @@ export const Section = styled.section`
   }
 
   @media (max-width: 767px) {
-
-    max-width: 480px;
+    width: 328px;
+    height: 534px;
     padding: 8px 8px 0;
   }
 `;
@@ -37,6 +37,8 @@ export const MonkeyBackImg = styled.img`
   @media (max-width: 767px) {
     width: 216px;
     height: 284px;
+    left: 18.6%;
+    bottom: 19.4%;
   }
 `;
 
@@ -86,8 +88,14 @@ export const TitleContainer = styled.div`
     }
   }
   @media (max-width: 767px) {
+    top: 9%;
+    left: 18.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     div {
       width: auto;
+      gap: 7px;
     }
     h2 {
       font-size: 44px;
@@ -113,6 +121,13 @@ export const LowerParagraph = styled.p`
     font-size: 20px;
     line-height: 33px;
     margin-top: 0px;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 27px;
+      margin-left: 80px;
+      margin-top: -115px;
+    }
   }
 `;
 
@@ -150,14 +165,22 @@ export const MeetApesConatiner = styled.div`
     border-radius: 12px;
     background: rgba(30, 30, 30, 0.1);
     backdrop-filter: blur(6px);
-    color: #1e1e1e;
     font-family: "Right Grotesk";
     font-size: 28px;
     font-weight: 900;
     line-height: 34px;
   }
   a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #1e1e1e;
+    transition: all 0.7s ease;
+    &:hover {
+      color: white;
+    }
   }
 
   @media (max-width: 1279px) {
@@ -179,6 +202,26 @@ export const MeetApesConatiner = styled.div`
       font-size: 16px;
       line-height: 19px;
       z-index: 2;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 216px;
+    gap: 12px;
+    margin-top: 280px;
+    flex-direction: column-reverse;
+    p {
+      font-size: 12px;
+      line-height: initial;
+      text-align: center;
+      width: 217px;
+    }
+    span:first-child {
+      margin-left: 0px;
+    }
+    button {
+      width: 216px;
+      z-index: 2;
+      padding: 10px 70px 12px 70px;
     }
   }
 `;
