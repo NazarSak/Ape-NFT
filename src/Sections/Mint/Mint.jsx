@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useCallback  } from "react";
 import MintForm from "../../Components/MintForm/MintForm";
 import Dagger from "../../assets/svg/About/dagger.svg";
 
@@ -10,7 +10,7 @@ const Mint = () => {
   const [errors, setErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const newErrors = {};
 
     if (!discordUsername.trim()) {
@@ -28,34 +28,40 @@ const Mint = () => {
     setErrors(newErrors);
     setFormSubmitted(false);
     return Object.keys(newErrors).length === 0;
-  };
+  }, [discordUsername, walletAddress]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      setDiscordUsername("");
-      setWalletAddress("");
-      setFormSubmitted(true);
-    }
-  };
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      if (validateForm()) {
+        setDiscordUsername("");
+        setWalletAddress("");
+        setFormSubmitted(true);
+      }
+    },
+    [validateForm]
+  );
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    const newErrors = { ...errors };
+  const handleInputChange = useCallback(
+    (e) => {
+      const { name, value } = e.target;
+      const newErrors = { ...errors };
 
-    if (newErrors[name]) {
-      delete newErrors[name];
-      setErrors(newErrors);
-    }
+      if (newErrors[name]) {
+        delete newErrors[name];
+        setErrors(newErrors);
+      }
 
-    if (name === "discordUsername") {
-      setDiscordUsername(value);
-    } else if (name === "walletAddress") {
-      setWalletAddress(value);
-    }
+      if (name === "discordUsername") {
+        setDiscordUsername(value);
+      } else if (name === "walletAddress") {
+        setWalletAddress(value);
+      }
 
-    setFormSubmitted(false);
-  };
+      setFormSubmitted(false);
+    },
+    [errors]
+  );
 
   const buttonText =
     Object.keys(errors).length > 0

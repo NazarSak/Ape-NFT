@@ -158,26 +158,18 @@ export const MeetApesConatiner = styled.div`
   span:last-child {
     margin-right: 110px;
   }
-
-  button {
-    width: 337px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e1e1e;
+    transition: all 0.7s ease;
     height: 70px;
     border-radius: 12px;
     background: rgba(30, 30, 30, 0.1);
     backdrop-filter: blur(6px);
     font-family: "Right Grotesk";
     font-size: 28px;
-    font-weight: 900;
-    line-height: 34px;
-  }
-  a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #1e1e1e;
-    transition: all 0.7s ease;
     &:hover {
       color: white;
     }
@@ -195,7 +187,7 @@ export const MeetApesConatiner = styled.div`
     span:last-child {
       margin-right: 0px;
     }
-    button {
+    a {
       width: auto;
       height: auto;
       padding: 10px 61px 12px 61px;
@@ -217,11 +209,6 @@ export const MeetApesConatiner = styled.div`
     }
     span:first-child {
       margin-left: 0px;
-    }
-    button {
-      width: 216px;
-      z-index: 2;
-      padding: 10px 70px 12px 70px;
     }
   }
 `;

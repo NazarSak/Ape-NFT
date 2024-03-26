@@ -47,15 +47,15 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.div`
-  border-radius: 24px;
-  background: #1e1e1e;
-
+  margin: 0 20px;
   div {
     padding: 24px 12px;
     height: 194px;
+    width: 194px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 24px;
   }
 
   h3 {
@@ -80,6 +80,15 @@ export const ListItem = styled.div`
     align-items: end;
     gap: 62px;
   }
+`;
+
+export const DefaultListItem = styled.div`
+  background: #1e1e1e;
+`;
+
+export const AnchorListItem = styled.div`
+  background-color: #dc3b5a;
+  border-radius: 24px;
 `;
 
 export const Switches = styled.div`

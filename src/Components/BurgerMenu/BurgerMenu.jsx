@@ -11,7 +11,7 @@ const BurgerMenu = ({ textColor, bgColor,textHover }) => {
 
   return (
     <ButtonsContainer textcolor={textColor} bgcolor={bgColor} texthover={textHover}>
-      <button onClick={toggleMenu}>MENU</button>
+      <button onClick={toggleMenu}>{isOpen ? "CLOSE" : "MENU"}</button>
       {isOpen && (
         <ListButtons>
           <li>

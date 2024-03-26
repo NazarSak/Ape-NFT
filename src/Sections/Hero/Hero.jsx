@@ -29,9 +29,7 @@ const Hero = () => {
           <span>Yacht Ape is a collection</span> of unique digital apes that you{" "}
           <span>can own in NFT format</span>
         </p>
-        <button>
-          <a href="#mintSection">MEET APES</a>
-        </button>
+        <a href="#mintSection">MEET APES</a>
       </MeetApesConatiner>
     </Section>
   );
