@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import questions from "../../Arrays/FAQ";
 
-import { Title, List, ListItem, Question } from "./FAQ.styled";
+import { Title, List, ListItem, Question } from "./fAQ.styled";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(0);
